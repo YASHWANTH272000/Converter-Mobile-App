@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <item
+            android:id="@+id/About"
+            android:orderInCategory="100"
+            android:title="@string/About_us"
+
+            />
+        <item
+            android:id="@+id/privacy"
+            android:orderInCategory="100"
+            android:title="@string/action_policy"
+
+            />
+        <item
+            android:id="@+id/exit"
+            android:orderInCategory="100"
+            android:title="@string/exit"
+
+            />
+
+
+</menu>

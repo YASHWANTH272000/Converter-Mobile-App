@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string name="btnConvert">Convert</string>
+    <string name="hello_world">Hello World!</string>
+    <string name="hint">Enter Temperature</string>
+    <string name="radCtoF">°C to Fahrenheit</string>
+    <string name="radFtoC">°F to Celsius</string>
+    <string name="txtTitle">Converter</string>
+    <string name="hint2">In Rupees ₹</string>
+
+    <string name="action_policy">Privacy Policy</string>
+    <string name="About_us">About Us</string>
+    <string name="exit">Exit</string>
+</resources>

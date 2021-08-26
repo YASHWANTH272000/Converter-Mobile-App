@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="RadioButtonStyle" parent="Theme.AppCompat.Light">
+        <item name="colorAccent">@color/black</item>
+        <item name="android:textColorPrimary">@color/purple_200</item>
+    </style>
+</resources>

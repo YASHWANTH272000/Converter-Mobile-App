@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradiantcurr"
+    tools:context=".TempActivity2">
+
+    <EditText
+        android:id="@+id/etTemperature"
+        android:layout_width="248dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="99dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/pen"
+        android:drawablePadding="12dp"
+        android:ems="10"
+        android:hint="@string/hint"
+        android:inputType="numberDecimal"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/tvResult"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="221dp"
+        android:layout_height="323dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnConvert"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult">
+
+        <RadioButton
+            android:id="@+id/radCtoF"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="@string/radCtoF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle"/>
+
+        <RadioButton
+            android:id="@+id/radFtoC"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="@string/radFtoC"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle"/>
+
+        <RadioButton
+            android:id="@+id/radCtoK"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="°C to Kelvin"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/radCtoN"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="°C to Newton"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/radCtoD"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:text="°C to Delisle"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/radCtoR"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="°C to Rankine"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/radCtoRe"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:text="°C to Reaumur"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle" />
+
+        <RadioButton
+            android:id="@+id/radCtoRo"
+            android:layout_width="match_parent"
+            android:layout_height="38sp"
+            android:text="°C to Romer"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:theme="@style/RadioButtonStyle" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="153dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="153dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/btnConvert"
+        android:textSize="16sp"
+        android:textStyle="bold|italic"
+        app:backgroundTint="#43C6AC"
+        app:cornerRadius="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="172dp"
+        android:layout_marginBottom="30dp"
+        android:hint="Result"
+        android:textAlignment="center"
+        android:textColor="#380B9C"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTemperature" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
